@@ -5,7 +5,7 @@ import { LessonsComponent } from './lessons/lessons.component';
 
 const lessonsRoutes: Routes = [
     {
-        path: 'lessons/:day',
+        path: 'lessons/:week/:day',
         component: LessonsComponent,
     }
 ];

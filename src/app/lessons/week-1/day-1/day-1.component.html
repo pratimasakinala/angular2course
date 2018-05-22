@@ -1,7 +1,4 @@
 <div class="row">
-  <h1 class="col-md-12 text-center hdr">Day 1</h1>
-</div>
-<div class="row">
   <h2 class="col-md-3">Concepts</h2>
   <div class="col-md-9">
     <ul class="point">
@@ -12,10 +9,14 @@
       <li> Angular CLI</li>
       <li> What is Typescript?</li>
       <li> Editing the first app</li>
-      <!-- The Basics; Components & databinding; directives; services & dependency injectiong; routing; observables; Forms; pipes; http; authentication; optimizations & ngModules; deployment; animations & testing -->
+      <li> The Basics</li>
+      <li> Components</li>
+      <li> Databinding</li>
+      <!-- directives; services & dependency injection; routing; observables; Forms; pipes; http; authentication; optimizations & ngModules; deployment; animations & testing -->
     </ul>
   </div>
 </div>
+
 <!-- Introductions -->
 <div class="row">
   <h2 class="col-md-3">Introductions</h2>
@@ -47,7 +48,7 @@
 <!-- End What are SPAs -->
 
 <!-- Angular Framework -->
-<div class="row">
+<div class="row" id="framework">
   <h2 class="col-md-3">Angular Framework</h2>
   <div class="col-md-9">
     <p class="point">There are various versions of Angular framework available.</p>
@@ -115,7 +116,7 @@
     <p class="point">TypeScript makes it easier to write cross-platform, application scale, JavaScript that runs in any browser or in any host.</p>
     <p class="point">Let's go to <a href="https://www.typescriptlang.org/play/" target="_blank">Typescript playground</a> to see what it does.</p>
     <br>
-    <div class="point">
+    <div class="point"> <!-- Types -->
       <h3>Types:</h3>
       <p>The Type system represents the different types of values supported by the language. It checks for the validity of the supplied values, before they are stored or manipulated by the program. It further allows for richer code hinting and automated documentation too.</p>
       <p>Built-in types -</p>
@@ -137,10 +138,10 @@
         </li>
       </ul>
       <p>Null and undefined - Are they the same?</p>
-    </div>
-    <div class="point">
+    </div> <!-- End Types -->
+    <div class="point"> <!-- Class -->
       <h3>Class:</h3>
-      <p>A class in terms of OOP (Object Oriented Programming) is a blueprint for creating objects. A class encapsulates data for the object.</p>
+      <p>A class defines a blueprint of what an object should look like and act like and then implements that blueprint by initialising class properties and defining methods.</p>
       <p>A class definition can include the following -</p>
       <ul>
         <li>
@@ -154,15 +155,21 @@
         </li>
       </ul>
       <p>These components put together are termed as the data members of the class.</p>
-    </div>
-    <div class="point">
-      <h3>Inheritance:</h3>
+      <p>Inheritance:</p>
       <p>A derived class that derives from the base class uses the <code>extends</code> keyword. Derived classes are often called <i>subclasses</i>, and base classes are often called <i>superclasses</i>.</p>
-    </div>
-    <div class="point">
+    </div> <!-- End Class -->
+    <div class="point"> <!-- Interface -->
+      <h3>Interface</h3>
+      <p>An interface is a group of related properties and methods that describe an object, but neither provides implementation nor initialisation for them. Unlike classes, an interface is a virtual structure that only exists within the context of TypeScript. The TypeScript compiler uses interfaces solely for type-checking purposes.</p>
+    </div><!-- End Interface -->
+    <div class="point"> <!-- Generics -->
+      <h3>Generics</h3>
+      <p>With generics, TypeScript enables you to write code that can act on a variety of data types instead of being limited to a single one. Why do we need them at all?</p>
+    </div><!-- End Generics -->
+    <div class="point"> <!-- Module -->
       <h3>Modules:</h3>
-      <p>The word modules refers to small units of independent, reusable code that exports specific objects, making them avaibale for other modules to require in their programs. Modules are highly self-contained with distict functionality, allowing them to be shuffled, removed, or added as necessary, without disrupting the system as a whole.</p>
-    </div>
+      <p>The word modules refers to small units of independent, reusable code that <i>export</i>s specific objects, making them avaibale for other modules to require in their programs. Modules are highly self-contained with distict functionality, allowing them to be shuffled, removed, or added as necessary, without disrupting the system as a whole. They provide the possibility to group related logic, encapsulate it, structure your code and prevent pollution of the global namespace.</p>
+    </div> <!-- End Module -->
   </div>
 </div>
 <!-- End Typescript -->
@@ -172,6 +179,88 @@
   <h2 class="col-md-3">Editing the first app</h2>
   <div class="col-md-9">
     <p class="point">Open an IDE of your choice. I use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code.</a></p>
+    <p class="point">Add <i>Auto Rename Tag</i> package.</p>
   </div>
 </div>
 <!-- End Editing the first app -->
+
+<!-- The Basics -->
+<div class="row" id="basics">
+  <h2 class="col-md-3">The Basics</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <h3>Bootstrap:</h3>
+      <p>Stop your server (if it is running). <br> Then run <code>npm install --save bootstrap@3</code>. This is the first step of adding bootstrap to our project. <br> Next step is to edit <i>angular-cli.json</i> file to add "node_modules/boostrap/dist/bootstrap.min.css" to the styles array. <br> Re-run <code>ng serve</code>.</p>
+    </div>
+    <div class="point">
+      <h3>How does an angular app get loaded and started?</h3>
+    </div>
+  </div>
+</div>
+<!-- End The Basics -->
+
+<!-- Components -->
+<div class="row">
+  <h2 class="col-md-3">Components</h2>
+  <div class="col-md-9">
+    <p class="point">Components are key features in Angular. We build our application by composing a bunch of components. We start with AppComponent (root component) which holds our entire application.</p>
+    <img src="./assets/components.png" alt="components" class="screenshot">
+    <div class="point">
+      <p>A component consists of the following -</p>
+      <ul>
+        <li>
+          <b>Template -</b> contains the HTML that needs to be rendered in the view for the application. Also includes binding and directives.
+        </li>
+        <li>
+          <b>Class -</b> contains properties and methods. This has the code which is used to support the view. It is defined in Typescript.
+        </li>
+        <li>
+          <b>Metadata -</b> has the extra data defined for the class. It is defined with a decorator.
+        </li>
+      </ul>
+    </div>
+    <div class="point">
+      <p>Lets take a look at -</p>
+      <ul>
+        <li><b>Creating new component</b></li>
+        <li>
+          <b>Understanding AppModule and Component Declaration -</b>
+          Angular uses components to build web pages & modules to bundle different pieces (components) into packages. AppModule basically gives Angular information about which features does the app have & uses.
+        </li>
+        <li><b>Using a new Component</b></li>
+        <li><b>Creating Components with CLI & nesting Components</b></li>
+        <li><b>Working with Component Template</b></li>
+        <li><b>Component Styles</b></li>
+        <li><b>Component Selector</b></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Components -->
+
+<!-- Databinding -->
+<div class="row">
+  <h2 class="col-md-3">Databinding</h2>
+  <div class="col-md-9">
+    <p class="point">Databinding is the process that establishes a connection between the application UI and business logic.</p>
+    <img src="./assets/databinding.png" alt="databinding" class="screenshot">
+    <img src="./assets/databinding-combination.png" alt="databinding combination" class="screenshot">
+    <div class="point">
+      <ul>
+        <li>
+          <b>String interpolation -</b> Any expression that can be resolved to a string in the end is the only condition for a string interpolation syntax.
+        </li>
+        <li>
+          <b>Property binding</b>
+        </li>
+        <li>
+          <b>Event Binding</b>
+        </li>
+        <li>
+          <b>Two-way databinding</b>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Databinding -->

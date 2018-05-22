@@ -8,6 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./lessons.component.css']
 })
 export class LessonsComponent implements OnInit {
+  week: number;
   day: number;
 
   constructor(private titleService: Title,
@@ -15,8 +16,9 @@ export class LessonsComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
+      this.week = params['week'];
       this.day = params['day'];
-      this.setTitle(`Day ${this.day}`);
+      this.setTitle(`Angular 2+ (Day ${this.day})`);
     });
   }
 

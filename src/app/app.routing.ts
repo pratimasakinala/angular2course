@@ -5,7 +5,7 @@ const appRoutes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/lessons/1'
+        redirectTo: '/lessons/1/1'
     }
 ];
 

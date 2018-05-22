@@ -1,4 +1,10 @@
-<div [ngSwitch]="day">
-  <day-1 *ngSwitchCase="1"></day-1>
-  <day-2 *ngSwitchCase="2"></day-2>
+<div class="row">
+  <h1 class="col-md-12 text-center hdr">Day {{this.day}}</h1>
 </div>
+<div [ngSwitch]="week">
+  <week-1 *ngSwitchCase="1"></week-1>
+</div>
+
+
+<!-- TODO: add handy links page with below links -->
+<!-- https://www.udemy.com/typescript/learn/v4/content -->
