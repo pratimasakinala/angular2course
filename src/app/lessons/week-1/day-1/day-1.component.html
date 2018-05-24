@@ -2,27 +2,36 @@
   <h2 class="col-md-3">Concepts</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li> Introductions</li>
-      <li> What is Angular?</li>
-      <li> What are SPAs?</li>
-      <li> Angular Framework</li>
-      <li> Angular CLI</li>
-      <li> What is Typescript?</li>
-      <li> Editing the first app</li>
-      <li> The Basics</li>
-      <li> Components</li>
-      <li> Databinding</li>
-      <!-- directives; services & dependency injection; routing; observables; Forms; pipes; http; authentication; optimizations & ngModules; deployment; animations & testing -->
+      <li class="link" 
+          (click)="scrollIntoView('intro')"> Introductions</li>
+      <li class="link" 
+          (click)="scrollIntoView('angular')"> What is Angular?</li>
+      <li class="link" 
+          (click)="scrollIntoView('spa')"> What are SPAs?</li>
+      <li class="link" 
+          (click)="scrollIntoView('framework')"> Angular Framework</li>
+      <li class="link" 
+          (click)="scrollIntoView('cli')"> Angular CLI</li>
+      <li class="link" 
+          (click)="scrollIntoView('typescript')"> What is Typescript?</li>
+      <li class="link" 
+          (click)="scrollIntoView('git-branching')"> Git Branching</li>
+      <li class="link" 
+          (click)="scrollIntoView('first-app')"> Editing the first app</li>
+      <li class="link" 
+          (click)="scrollIntoView('basics')"> The Basics</li>
+      <li class="link" 
+          (click)="scrollIntoView('components')"> Components</li>
     </ul>
   </div>
 </div>
 
 <!-- Introductions -->
-<div class="row">
+<div class="row" id="intro">
   <h2 class="col-md-3">Introductions</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>Who am I? Where am I from?</li>
+      <li>Who am I?</li>
       <li>Who are you?</li>
     </ul>
   </div>
@@ -30,7 +39,7 @@
 <!-- End Introductions -->
 
 <!-- What is Angular -->
-<div class="row">
+<div class="row" id="angular">
   <h2 class="col-md-3">What is Angular?</h2>
   <div class="col-md-9">
     <p class="point">Angular is a Typescript-based open-source front-end web application framework that allows you to create reactive SPAs.</p>
@@ -39,7 +48,7 @@
 <!-- End What is Angular -->
 
 <!-- What are SPAs -->
-<div class="row">
+<div class="row" id="spa">
   <h2 class="col-md-3">What are SPAs?</h2>
   <div class="col-md-9">
     <p class="point">Single Page Applications (SPAs) are web applications where the page never changes but is rewritten. There is only one HTML file and a bunch of JS code we get from the server. Every change is rendered in the browser. This approach avoids interruption of user experience between successive pages making application behave more like a desktop application.</p>
@@ -65,7 +74,7 @@
 <!-- End Angular Framework -->
 
 <!-- Angular CLI -->
-<div class="row">
+<div class="row" id="cli">
   <h2 class="col-md-3">Angular CLI</h2>
   <div class="col-md-9">
     <p class="point">Angular projects are more elaborate in regards to their build workflow, there are couple of files that need to be converted before they can run in browser. Angular CLI (Command Line Interface) is the recommended and best way of creating Angular projects as it does all of that work for us and heavily optimizes our code.</p>
@@ -107,7 +116,7 @@
 <!-- End Angular CLI -->
 
 <!-- Typescript -->
-<div class="row">
+<div class="row" id="typescript">
   <h2 class="col-md-3">Typescript</h2>
   <div class="col-md-9">
     <p class="point">We have come across the word Typescript before in the definition of Angular. But what does it mean?</p>
@@ -174,12 +183,31 @@
 </div>
 <!-- End Typescript -->
 
+<!-- Git Branching -->
+<div class="row" id="git-branching">
+    <h2 class="col-md-3">Git Branching</h2>
+    <div class="col-md-9">
+      <!-- TODO: add content here -->
+      <p class="point">A branch in Git is simply a lightweight movable pointer to commits. The default branch name in Git is <i>master</i>.</p>
+      <p class="point">Basic Git commands related to branching:</p>
+      <ul class="point">
+        <li><code>git branch</code> - lists all available branches</li>
+        <li><code>git branch <i>branch-name</i></code> - creates a new branch called <i>branch-name</i> which has a copy of the snapshot of its parent branch (branch you ran this command from)</li>
+        <li><code>git checkout <i>branch-name</i></code> - switches to <i>branch-name</i> branch</li>
+        <li><code>git checkout -b <i>branch-name</i></code> - combines the functionality of last two commands</li>
+        <li><code>git branch -d <i>branch-name</i></code> - deleted <i>branch-name</i> branch</li>
+      </ul>
+      <p class="point">NOTE: all of the above commands are only for local branches.</p>
+    </div>
+</div>
+<!-- End Git Branching -->
+
 <!-- Editing the first app -->
-<div class="row">
+<div class="row" id="first-app">
   <h2 class="col-md-3">Editing the first app</h2>
   <div class="col-md-9">
     <p class="point">Open an IDE of your choice. I use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code.</a></p>
-    <p class="point">Add <i>Auto Rename Tag</i> package.</p>
+    <p class="point">Add <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank">Auto Rename Tag</a> and <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" target="_blank">Bracket Pair Colorizer</a> packages.</p>
   </div>
 </div>
 <!-- End Editing the first app -->
@@ -200,7 +228,7 @@
 <!-- End The Basics -->
 
 <!-- Components -->
-<div class="row">
+<div class="row" id="components">
   <h2 class="col-md-3">Components</h2>
   <div class="col-md-9">
     <p class="point">Components are key features in Angular. We build our application by composing a bunch of components. We start with AppComponent (root component) which holds our entire application.</p>
@@ -237,30 +265,3 @@
   </div>
 </div>
 <!-- End Components -->
-
-<!-- Databinding -->
-<div class="row">
-  <h2 class="col-md-3">Databinding</h2>
-  <div class="col-md-9">
-    <p class="point">Databinding is the process that establishes a connection between the application UI and business logic.</p>
-    <img src="./assets/databinding.png" alt="databinding" class="screenshot">
-    <img src="./assets/databinding-combination.png" alt="databinding combination" class="screenshot">
-    <div class="point">
-      <ul>
-        <li>
-          <b>String interpolation -</b> Any expression that can be resolved to a string in the end is the only condition for a string interpolation syntax.
-        </li>
-        <li>
-          <b>Property binding</b>
-        </li>
-        <li>
-          <b>Event Binding</b>
-        </li>
-        <li>
-          <b>Two-way databinding</b>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- End Databinding -->

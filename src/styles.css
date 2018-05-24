@@ -125,3 +125,7 @@ a:hover {
 b {
   font-weight: 350;
 }
+
+ul li.link:hover {
+  cursor: pointer;
+}

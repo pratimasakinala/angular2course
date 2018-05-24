@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'week-1',
@@ -8,6 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class Week1Component implements OnInit {
   @Input() day: number;
+  @Output() scrolledTo = new EventEmitter();
 
   constructor(private route: ActivatedRoute) { }
 
@@ -15,6 +16,10 @@ export class Week1Component implements OnInit {
     this.route.params.subscribe((params) => {
       this.day = params['day'];
     });
+  }
+
+  scrollIntoView(event) {
+    this.scrolledTo.emit(event);
   }
 
 }

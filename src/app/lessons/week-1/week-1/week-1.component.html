@@ -1,4 +1,5 @@
 <div [ngSwitch]="day">
-  <day-1 *ngSwitchCase="1"></day-1>
-  <day-2 *ngSwitchCase="2"></day-2>
+  <day-1 *ngSwitchCase="1" (scrolledTo)="scrollIntoView($event)"></day-1>
+  <day-2 *ngSwitchCase="2" (scrolledTo)="scrollIntoView($event)"></day-2>
+  <day-3 *ngSwitchCase="3" (scrolledTo)="scrollIntoView($event)"></day-3>  
 </div>

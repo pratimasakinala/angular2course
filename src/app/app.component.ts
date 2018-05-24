@@ -16,4 +16,20 @@ export class AppComponent implements OnInit {
   setTitle(newTitle: string) {
     this.titleService.setTitle(newTitle);
   }
+
+  showScrollButton() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+      document.getElementById('scroll-to-top').style.display = "block";
+    } else {
+      document.getElementById('scroll-to-top').style.display = "none";      
+    }
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }
