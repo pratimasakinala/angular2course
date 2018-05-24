@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'day-3',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./day-3.component.css']
 })
 export class Day3Component implements OnInit {
+  @Output() scrolledTo = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  scrollIntoView(id) {
+    this.scrolledTo.emit(id);
   }
 
 }
