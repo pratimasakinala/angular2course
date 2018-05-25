@@ -11,7 +11,7 @@
       <li class="link" 
           (click)="scrollIntoView('asgmt-3')"> Practicing Directives</li>
       <li class="link" 
-          (click)="scrollIntoView('asgmt-4')"> Practicing Components & Databinding</li> <!-- TODO: skip if not completed component & databinding deep dive -->
+          (click)="scrollIntoView('asgmt-4')"> Practicing Components & Databinding</li>
       <!-- directives; services & dependency injection; routing; observables; Forms; pipes; http; authentication; optimizations & ngModules; deployment; animations & testing -->
     </ul>
   </div>
@@ -39,14 +39,33 @@
   <h2 class="col-md-3">Practicing Components</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>Create two new Components (manually or with CLI): <i>WarningAlert</i> and <i>SuccessAlert</i>.</li>
-      <li>Output them beneath each other in the AppComponent.</li>
-      <li>Output a warning or success message in the Components.</li>
+      <li>Create three new Components: <i>WarningMessage</i> (manually), <i>SuccessMessage</i> (using CLI) and <i>DangerMessage</i> (either).</li>
+      <li>For WarningMessage Component: 
+        <ul>
+          <li>use internal template and external styles.</li>
+          <li>use default selector.</li>
+        </ul>
+      </li>
+      <li>For SuccessMessage Component: 
+        <ul>
+          <li>use external template and inline styles.</li>
+          <li>use attribute selector.</li>
+        </ul>
+      </li>
+      <li>For DangerMessage Component: 
+        <ul>
+          <li>use external or internal template and styles.</li>
+          <li>use class selector.</li>
+        </ul>
+      </li>
+      <li>Output them next to each other in the AppComponent.</li>
+      <li>Output a warning, success or danger message in the Components.</li>
       <li>Style the Components appropriately.</li>
     </ul>
     <hr>
-    <p class="point">Use external or internal templates and styles!</p>
-    <p class="point">Feel free to create more components, nest them into each other or play around with different types of selectors!</p>
+    <p class="point">Feel free to create more components, nest them into each other!</p>
+    <hr>
+    <p class="point"><b>Additional challenge:</b> Add a button in AppComponent that randomly picks which component to display.</p>
   </div>
 </div>
 <!-- End Practicing Components -->
@@ -56,10 +75,11 @@
   <h2 class="col-md-3">Practicing Databinding</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li>Add an Input field which updates a property ('username') via Two-Way-Binding.</li>
-      <li>Output the username property via String Interpolation (in a paragraph below the input).</li>
-      <li>Add a button which may only be clicked if the username is NOT an empty string.</li>
-      <li>Upon clicking the button, the username should be reset to an empty string.</li>
+      <li>Add an Input field which updates a property <i>monsterName</i> via Two-Way-Binding.</li>
+      <li>Output the monsterName property in a paragraph below the input.</li>
+      <li>Add a button which may only be clicked if the monsterName is NOT an empty string.</li>
+      <li>Upon clicking the button, generate a random power value for the monster and store it in an array.</li>
+      <li>Display a message (with monsterName and power included) below the button for all monsters created.</li>
     </ul>
   </div>
 </div>
@@ -69,32 +89,72 @@
 <div class="row" id="asgmt-3">
   <h2 class="col-md-3">Practicing Directives</h2>
   <div class="col-md-9">
-    <ul class="point">
-      <li>Add a button which says 'Display Details'.</li>
-      <li>Add a paragraph with any content of your choice.</li>
-      <li>Toggle the displaying of that paragraph with the button created in the first step.</li>
-      <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number).</li>
-      <li>Starting at the 10th log item, give all future log items a green background (via ngClass) and white color (ngStyle).</li>
-    </ul>
+    <div class="point">
+      <p><b>Practice 1:</b></p>
+      <ul>
+        <li>Add a button which says 'Display Details'.</li>
+        <li>Add a paragraph with any content of your choice.</li>
+        <li>Toggle the displaying of that paragraph with the button created in the first step.</li>
+        <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number).</li>
+        <li>Starting at the 10th log item, give all future log items a green background (via ngClass) and white color (ngStyle).</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2:</b></p>
+      <ul>
+        <li>Continue working on the project created while practicing databinding above.</li>
+        <li>Create a new branch.</li>
+        <li>Add a new input that binds to <i>hero</i>'s name property.</li>
+        <li>Add a button which may only be clicked if the hero's name is NOT an empty string.</li>
+        <li>Once this button is clicked, generate random power for hero and remove/hide both the input and button (added in the previous two steps) from the DOM.</li>
+        <li>Looping though the array of monsters, style the display message such that if the monster's power is greater than hero's, add danger styling.</li>
+      </ul>
+    </div>
   </div>
 </div>
 <!-- End Practicing Directives -->
 
 <!-- Practicing Components & Directives -->
-<!-- TODO: skip if not completed component & databinding deep dive -->
 <div class="row" id="asgmt-4">
   <h2 class="col-md-3">Practicing Components & Directives</h2>
   <div class="col-md-9">
-    <ul class="point">
-      <li>Create three new components(manually or with CLI): <i>GameControl</i>, <i>Odd</i> and <i>Even</i>.</li>
-      <li>The GameControl Component should have buttons to start and stop the game.</li>
-      <li>When starting the game, an event (holding a incrementing number) should get emitted each second.</li>
-      <li>The event should be listenable from outside the component.</li>
-      <li>When stopping the game, no more events should get emitted.</li>
-      <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers).</li>
-      <li>Simply output <i>Odd - NUMBER</i> or <i>Even - NUMBER</i> in the two components.</li>
-      <li>Style the element holding your output text differently in both components.</li>
-    </ul>
+    <div class="point">
+      <p><b>Practice 1:</b></p>
+      <ul>
+        <li>Continue working on the monster project.</li>
+        <li>Create a new branch.</li>
+        <li>Break down the AppComponent into smaller Components.</li>
+        <li>Pass necessary property/event into and out of these new Components.</li>
+      </ul>
+      <hr>
+      <p><b>Additional challenge:</b></p>
+      <ul>
+        <li>Add a 'Fight' button next to each monster message.</li>
+        <li>Upon clicking this button, do Math calculations to see if the hero survived the fight.</li>
+        <li>If the hero dies, clear the monster list and display 'You Lost!' message and bring back the input for hero and reset the game.</li>
+        <li>If the hero survives and the monster has:
+          <ul>
+            <li>no more power, remove the monster from the list</li>
+            <li>some power left, keep the monster in the list</li>
+          </ul>
+          and let the player continue.
+        </li>
+        <li>Make any style changes you need/want to.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2:</b></p>
+      <ul>
+        <li>Create three new components(manually or with CLI): <i>GameControl</i>, <i>Odd</i> and <i>Even</i>.</li>
+        <li>The GameControl Component should have buttons to start and stop the game.</li>
+        <li>When starting the game, an event (holding a incrementing number) should get emitted each second.</li>
+        <li>The event should be listenable from outside the component.</li>
+        <li>When stopping the game, no more events should get emitted.</li>
+        <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers).</li>
+        <li>Simply output <i>Odd - NUMBER</i> or <i>Even - NUMBER</i> in the two components.</li>
+        <li>Style the element holding your output text differently in both components.</li>
+      </ul>
+  </div>
   </div>
 </div>
 <!-- End Practicing Components & Directives -->
