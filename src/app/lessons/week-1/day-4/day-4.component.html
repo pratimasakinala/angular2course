@@ -3,6 +3,8 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link" 
+        (click)="scrollIntoView('cmp-db-deep-dive')"> Components & Databinding Deep Dive</li>
+      <li class="link" 
         (click)="scrollIntoView('debugging')"> Debugging</li>
       <li class="link"
           (click)="scrollIntoView('course-proj-cmp-db')"> Course Project - Components & Databinding</li>
@@ -16,6 +18,29 @@
     </ul>
   </div>
 </div>
+
+<!-- Components & Databinding Deep Dive -->
+<div class="row" id="cmp-db-deep-dive">
+  <h2 class="col-md-3">Components & Databinding Deep Dive</h2>
+  <div class="col-md-9">
+    <p class="point">Clone <a href="https://github.com/pratimasakinala/cmp-databinding" target="_blank">this</a> project.</p>
+    <ul class="point">
+      <li>Splitting App into Components</li>
+      <li>Property and event binding -
+        <img src="./assets/property-event-binding.png" alt="property & event binding" class="screenshot">
+      </li>
+      <li>Understanding View Encapsulation</li>
+      <li>Local references in Templates</li>
+      <li>Accessing template & DOM with @ViewChild</li>
+      <li>Using <i>ng-content</i></li>
+      <li>Component Lifecycle -
+        <img src="./assets/component-lifecycle.png" alt="component lifecycle" class="screenshot">
+      </li>
+      <li>Accessing <i>ng-content</i> with @ContentChild</li>
+    </ul>
+  </div>
+</div>
+<!-- End Components & Databinding Deep Dive -->
 
 <!-- Debugging -->
 <div class="row" id="debugging">

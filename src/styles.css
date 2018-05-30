@@ -78,30 +78,32 @@ body.theme .content .row .week-header {
   padding: 15px;
 }
 
-body.links {
+/* Handy links */
+.links {
   font-weight: 100;
 }
-body.links nav {
+.links nav {
 	font-weight: 400;
 }
-body.links .link-list {
+.links .link-list {
   padding: 15px;
 }
-body.links .link-list ul {
+.links .link-list ul {
   font-size: 1.7em;
 }
-body.links .link-list ul li {
+.links .link-list ul li {
   margin-bottom: 30px;
 }
-body.links .link-list ul li a {
+.links .link-list ul li a {
   color: #0073ea;
   display: block;
   margin-top: 5px;
 }
-body.links .link-list ul li a:hover {
-  color: #ff0084;
+.links .link-list ul li a:hover {
+  color: #7A1501;
 }
 
+/* Others */
 .container.content {
   padding-top: 165px;
 }

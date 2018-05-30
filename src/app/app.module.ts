@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppRouting } from './app.routing';
-
 import { LessonsModule } from './lessons/lessons.module';
+import { HandyLinksModule } from './handy-links/handy-links.module';
+
+import { AppRouting } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HeaderLmntComponent } from './header-lmnt/header-lmnt.component';
@@ -20,7 +21,8 @@ import { HeaderLmntComponent } from './header-lmnt/header-lmnt.component';
     FormsModule,
     HttpModule,
     AppRouting,
-    LessonsModule
+    LessonsModule,
+    HandyLinksModule
   ],
   providers: [],
   bootstrap: [AppComponent]
