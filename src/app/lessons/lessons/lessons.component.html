@@ -3,4 +3,5 @@
 </div>
 <div [ngSwitch]="week">
   <week-1 *ngSwitchCase="1" (scrolledTo)="scrollIntoView($event)"></week-1>
+  <week-2 *ngSwitchCase="2" (scrolledTo)="scrollIntoView($event)"></week-2>  
 </div>

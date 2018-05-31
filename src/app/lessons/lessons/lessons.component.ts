@@ -17,8 +17,20 @@ export class LessonsComponent implements OnInit {
 
   ngOnInit() {    
     this.route.params.subscribe((params) => {
-      this.week = params['week'];
-      this.day = params['day'];
+      this.week = +params['week'];
+
+      switch(this.week) {
+        case 1:
+          this.day = +params['day'];
+          break;
+        case 2:
+          this.day = +params['day'] + 4;
+          break;
+        case 3:
+          this.day = +params['day'] + 9;
+          break;
+      }
+
       this.setTitle(`Angular 2+ (Day ${this.day})`);
     });
 

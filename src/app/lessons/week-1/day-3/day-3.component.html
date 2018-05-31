@@ -4,15 +4,17 @@
     <ul class="point">
       <li class="link"
           (click)="scrollIntoView('assignments')"> Assignments</li>
+      <li class="link"
+          (click)="scrollIntoView('asgmt-1')"> Practicing Typescript</li>
       <li class="link" 
-          (click)="scrollIntoView('asgmt-1')"> Practicing Components</li>
+          (click)="scrollIntoView('asgmt-2')"> Practicing Components</li>
       <li class="link" 
-          (click)="scrollIntoView('asgmt-2')"> Practicing Databinding</li>
-      <li class="link" 
-          (click)="scrollIntoView('asgmt-3')"> Practicing Directives</li>
+          (click)="scrollIntoView('asgmt-3')"> Practicing Databinding</li>
       <!-- TODO: move below practice it to next assignment day-->
       <!-- <li class="link" 
-          (click)="scrollIntoView('asgmt-4')"> Practicing Components & Databinding</li> -->
+          (click)="scrollIntoView('asgmt-4')"> Practicing Directives</li> -->
+      <!-- <li class="link" 
+          (click)="scrollIntoView('asgmt-5')"> Practicing Components & Databinding</li> -->
     </ul>
   </div>
 </div>
@@ -36,8 +38,52 @@
 </div>
 <!-- End Assignments -->
 
-<!-- Practicing Components -->
+<!-- Practicing Typescript -->
 <div class="row" id="asgmt-1">
+  <h2 class="col-md-3">Practicing Typescript</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <!-- https://basarat.gitbooks.io/typescript/docs/classes.html -->
+      <p><b>Practice 1 (Class & Class Inheritance):</b></p>
+      <ul>
+        <li>Create a class <i>Point</i>.</li>
+        <li>Define <i>x</i> and <i>y</i> fields of type number.</li>
+        <li>Define a constructor that sets these fields.</li>
+        <li>Create a method <i>add</i> that takes in an argument (newPoint) of type Point.</li>
+        <li><i>add</i> method should return a new Point generated having x value to be the sum of existing point's x and newPoint's x. Same with the y value.</li>
+        <li>Create two variables <i>p1</i> and <i>p2</i> which are instances of Point class.</li>
+        <li>Create a third variable <i>p3</i> which adds <i>p2</i> to <i>p1</i>. Print this variable's value to the console.</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>Create a derived class <i>Point3D</i> (base class = Point).</li>
+        <li>Add <i>z</i> field of type number.</li>
+        <li>Setup the constructor to set x and y fields in the base class and z field.</li>
+        <li>Create a method <i>add</i> that takes in an argument (new3DPoint) of type Point3D.</li>
+        <li>In this method, add respective fields of existing point3D and new3DPoint and return the value.</li>
+        <li>Create two variables <i>p3D1</i> and <i>p3D2</i> which are instances of Point3D class.</li>
+        <li>Create a third variable <i>p3D3</i> which adds <i>p3D2</i> to <i>p3D1</i>. Print this variable's value to the console.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <!-- https://www.tutorialspoint.com/typescript/typescript_interfaces.htm -->
+      <p><b>Practice 2 (Interface):</b></p>
+      <ul>
+        <li>Create an interface <i>Person</i>.</li>
+        <li>Define firstName, lastName fields and sayHi method, all of string type.</li>
+        <li>Create a <i>customer</i> variable that is of Person type.</li>
+        <li>Set some values to the fields. Set sayHi method to return "Hi there" message.</li>
+        <li>Create an <i>employee</i> variable that is also of type Person.</li>
+        <li>Set some values to the fields with sayHi returning "Hello!!" message.</li>
+        <li>Print both customer and employee variables to the console.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Practicing Typescript -->
+
+<!-- Practicing Components -->
+<div class="row" id="asgmt-2">
   <h2 class="col-md-3">Practicing Components</h2>
   <div class="col-md-9">
     <ul class="point">
@@ -73,23 +119,91 @@
 <!-- End Practicing Components -->
 
 <!-- Practicing Databinding -->
-<div class="row" id="asgmt-2">
+<div class="row" id="asgmt-3">
   <h2 class="col-md-3">Practicing Databinding</h2>
   <div class="col-md-9">
-    <ul class="point">
-      <li>Call this project <i>monster-fight</i>.</li>
-      <li>Add an Input field which updates a property <i>monsterName</i> via Two-Way-Binding.</li>
-      <li>Output the monsterName property in a paragraph below the input.</li>
-      <li>Add a button which may only be clicked if the monsterName is NOT an empty string.</li>
-      <li>Upon clicking the button, generate a random power value for the monster and store it in an array.</li>
-      <li>Display a message (with monsterName and power included) below the button for all monsters created.</li>
-    </ul>
+    <div class="point">
+      <p><b>Practice 1 (String Interpolation):</b></p>
+      <ul>
+        <li>Create a <i>heading</i> property in AppComponent and set it to "Person Details".</li>
+        <li>Create a <i>person</i> property of type any.</li>
+        <li>Set <i>person</i> to be an object consisting of name (empty object) and gender (empty string) properties.</li>
+        <li>The name property in <i>person</i> should have first and last properties (both of type string and set to some default values).</li>
+        <li>In the template, display the heading followed by a paragraph.</li>
+        <li>
+          Output below message in the paragraph-
+          <br>
+          <code>
+            Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br> 
+            City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+          </code>
+        </li>
+        <li>In the Name section in the paragraph above, display 'Mr' or 'Mrs' based on the gender of the person. (for example: Mr John Doe)</li>
+        <li>In the City section, check if person property has a <i>address</i> property. If it exists, display its value. Otherwise leave the text blank.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2 (String Interpolation):</b></p>
+      <ul>
+        <li>Create two properties (<i>first</i> and <i>second</i>) of type number in AppComponent and set some default values.</li>
+        <li>Output these properties in the template.</li>
+        <li>Output the sum of these properties in the template (Sum of numbers: ___)</li>
+        <li>Output the largest of these property values in the template (Largest of numbers: ___)</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 3 (Property Binding):</b></p>
+      <ul>
+        <li>Create a class <i>Person</i> (fields: name, gender and rating).</li>
+        <li>Set appropriate types to above fields.</li>
+        <li>Create two variable <i>female</i> and <i>male</i>.</li>
+        <li>Set these variables to be instances of Person class (initialize with appropriate values (gender: 'f' for female) and (gender: 'm' for male)).</li>
+        <li>Create a <i>person</i> property.</li>
+        <li>Create a method that randomly pick between female and male variables and sets it to person property.</li>
+        <li>In the template:
+          <ul>
+            <li>Use property binding to set an h1 tag's content (textContent) to be "Name: ___ ". Fill in the blank with person's name.</li>
+            <li>Add two buttons below the h1. One should say "Male" and other "Female".</li>
+            <li>These buttons should be disabled if person's gender is male or female respectively.</li>
+            <li>On clicking the buttons, person should be set to the opposite gender.</li>
+            <li>(For example, if person is originally set to female, only Male button should be enabled. And on clicking this button, person should be set to male. And hence the button should be disabled.)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 4:</b></p>
+      <ul>
+        <li>Call this project <i>monster-fight</i>.</li>
+        <li>Work on each of below sections in separate branches (appropriately named).</li>
+        <li>
+          <p><b>String Interpolation:</b></p>
+          <ul>
+            <li>Create a <i>monsterName</i> property of type string in AppComponent.</li>
+            <!-- <li>Add an Input field which updates a property <i>monsterName</i> via Two-Way-Binding.</li> -->
+            <li>Output the monsterName property in a paragraph<!-- below the input-->.</li>
+          </ul>
+        </li>
+        <li>
+          <p><b>Property Binding:</b></p>
+          <ul>
+            <li>Add a button (below the paragraph) which may only be clicked if the monsterName is NOT an empty string.</li>
+            <li>Upon clicking the button, generate a random power value for the monster and store it in a property (appropriately named).</li>
+            <li>Display a message (with monsterName and power included) below the button for all monsters created.</li>
+            <li>Test functionality by adding/removing value of monsterName property.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 <!-- End Practicing Databinding -->
 
+<!-- TODO: move below practice it to next assignment day-->
 <!-- Practicing Directives -->
-<div class="row" id="asgmt-3">
+<!-- <div class="row" id="asgmt-4">
   <h2 class="col-md-3">Practicing Directives</h2>
   <div class="col-md-9">
     <div class="point">
@@ -114,12 +228,11 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 <!-- End Practicing Directives -->
 
-<!-- TODO: move below practice it to next assignment day-->
 <!-- Practicing Components & Directives -->
-<!-- <div class="row" id="asgmt-4">
+<!-- <div class="row" id="asgmt-5">
   <h2 class="col-md-3">Practicing Components & Directives</h2>
   <div class="col-md-9">
     <div class="point">
