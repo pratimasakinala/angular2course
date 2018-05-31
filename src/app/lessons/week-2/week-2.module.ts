@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { Day1Component } from './day-1/day-1.component';
 import { Week2Component } from './week-2/week-2.component';
+import { Day2Component } from './day-2/day-2.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { Week2Component } from './week-2/week-2.component';
   ],
   declarations: [
     Day1Component,
-    Week2Component
+    Week2Component,
+    Day2Component
   ],
   exports: [
     Week2Component
