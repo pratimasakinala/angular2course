@@ -2,17 +2,70 @@
   <h2 class="col-md-3">Concepts</h2>
   <div class="col-md-9">
     <ul class="point">
+      <li class="link"> Assingments Solutions</li>
+      <li class="link" 
+        (click)="scrollIntoView('course-proj-basics')"> Course Project - The Basics Continued</li>
+      <li class="link" 
+        (click)="scrollIntoView('cmp-db-deep-dive')"> Components & Databinding Deep Dive</li>
+      <li class="link" 
+        (click)="scrollIntoView('debugging')"> Debugging</li>
       <li class="link"
           (click)="scrollIntoView('course-proj-cmp-db')"> Course Project - Components & Databinding</li>
-      <li class="link"
-          (click)="scrollIntoView('directive')"> Directives</li>
-      <li class="link"
-          (click)="scrollIntoView('directive')"> Course Project - Directives</li>
-      <li class="link"
-          (click)="scrollIntoView('services')"> Services & Dependency Injection</li>
     </ul>
   </div>
 </div>
+
+<!-- Course Project - The Basics -->
+<div class="row" id="course-proj-basics">
+  <h2 class="col-md-3">Course Project - The Basics Continued</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p>Continue building the application: </p>
+      <ul>
+        <li><b>Adding a navigation bar</b></li>
+        <li><b>Working on Recipe feature</b></li>
+        <li><b>Working on Shopping List feature</b></li>
+      </ul>
+    </div>   
+  </div>
+</div>
+<!-- End Course Project - The Basics -->
+
+<!-- Components & Databinding Deep Dive -->
+<div class="row" id="cmp-db-deep-dive">
+  <h2 class="col-md-3">Components & Databinding Deep Dive</h2>
+  <div class="col-md-9">
+    <p class="point">Clone <a href="https://github.com/pratimasakinala/cmp-databinding" target="_blank">this</a> project.</p>
+    <ul class="point">
+      <li>Splitting App into Components</li>
+      <li>Property and event binding -
+        <img src="./assets/property-event-binding.png" alt="property & event binding" class="screenshot">
+      </li>
+      <li>Understanding View Encapsulation</li>
+      <li>Local references in Templates</li>
+      <li>Accessing template & DOM with @ViewChild</li>
+      <li>Using <i>ng-content</i></li>
+      <li>Component Lifecycle -
+        <img src="./assets/component-lifecycle.png" alt="component lifecycle" class="screenshot">
+      </li>
+      <li>Accessing <i>ng-content</i> with @ContentChild</li>
+    </ul>
+  </div>
+</div>
+<!-- End Components & Databinding Deep Dive -->
+
+<!-- Debugging -->
+<div class="row" id="debugging">
+  <h2 class="col-md-3">Debugging</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Understanding Angular error message</li>
+      <li>Debugging in browser using sourcemaps</li>
+      <li>Using Augury</li>
+    </ul>
+  </div>
+</div>
+<!-- End Debugging -->
 
 <!-- Course Project - Components & Databinding -->
 <div class="row" id="course-proj-cmp-db">
@@ -29,57 +82,3 @@
   </div>
 </div>
 <!-- End Course Project - Components & Databinding -->
-  
-<!-- Directives -->
-<div class="row" id="directive">
-  <h2 class="col-md-3">Directives</h2>
-  <div class="col-md-9">
-    <p class="point">Attribute vs Structural Directives: </p>
-    <img src="./assets/attribute-vs-structural-dir.png" alt="attribute vs structural directives" class="screenshot">
-    <div class="point">
-      <p>Clone <a href="https://github.com/pratimasakinala/directives" target="_blank">this</a> project to learn:</p>
-      <ul>
-        <li>Recap of some built-in directives.</li>
-        <li>Create Basic Attribute directive.</li>
-        <li>Using Renderer (Learn more <a href="https://angular.io/api/core/Renderer2" target="_blank">here</a>).</li>
-        <li>HostListener & HostBinding.</li>
-        <li>Binding to directive properties.</li>
-        <li>Behind the scenes of structural directive.</li>
-        <li>Building a Structural directive.</li>
-        <li>Understanding ngSwitch.</li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- End Directives -->
-
-<!-- Course Project - Directives -->
-<div class="row" id="course-project-dir">
-  <h2 class="col-md-3">Course Project - Directives</h2>
-  <div class="col-md-9">
-    <p class="point">Enhance the app to open the dropdowns which currently don't work.</p>
-  </div>
-</div>
-<!-- End Course Project - Directives -->
-
-<!-- Services & Dependency Injection -->
-<div class="row" id="services">
-  <h2 class="col-md-3">Services & Dependency Injection</h2>
-  <div class="col-md-9">
-    <p class="point">Services are JavaScript functions, which are responsible for performing a single task. Services may have their associated properties and the methods, which can be included in the component.</p>
-    <img src="./assets/services.png" alt="services" class="screenshot">
-    <p class="point">Clone <a href="https://github.com/pratimasakinala/services" target="_blank">this</a> project.</p>
-    <ul class="point">
-      <li>Creating a logging service.</li>
-      <li>Injecting LoggingService into Components.</li>
-      <li>Creating a data service.</li>
-      <li>
-        Hierarchical Injector-
-        <img src="./assets/hierarchical-injector.png" alt="hierarchical-injector" class="screenshot">
-      </li>
-      <li>Injecting Services into Services.</li>
-      <li>Using Services for cross-component communication.</li>
-    </ul>
-  </div>
-</div>
-<!-- End Services & Dependency Injection -->
