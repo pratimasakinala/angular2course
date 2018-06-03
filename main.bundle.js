@@ -1304,7 +1304,7 @@ module.exports = "<div class=\"row\">\n  <h2 class=\"col-md-3\">Concepts</h2>\n 
 /***/ 212:
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"day\">\n  <day-1 *ngSwitchCase=\"1\" (scrolledTo)=\"scrollIntoView($event)\"></day-1>\n  <day-2 *ngSwitchCase=\"2\" (scrolledTo)=\"scrollIntoView($event)\"></day-2>\n  <day-3 *ngSwitchCase=\"3\" (scrolledTo)=\"scrollIntoView($event)\"></day-3>\n  <day-4 *ngSwitchCase=\"4\" (scrolledTo)=\"scrollIntoView($event)\"></day-4>  \n</div>"
+module.exports = "<div [ngSwitch]=\"day\">\n  <day-1 *ngSwitchCase=\"1\" (scrolledTo)=\"scrollIntoView($event)\"></day-1>\n  <!-- <day-2 *ngSwitchCase=\"2\" (scrolledTo)=\"scrollIntoView($event)\"></day-2>\n  <day-3 *ngSwitchCase=\"3\" (scrolledTo)=\"scrollIntoView($event)\"></day-3>\n  <day-4 *ngSwitchCase=\"4\" (scrolledTo)=\"scrollIntoView($event)\"></day-4> \n  <day-5 *ngSwitchCase=\"5\" (scrolledTo)=\"scrollIntoView($event)\"></day-5>      -->\n</div>"
 
 /***/ }),
 
