@@ -2,15 +2,12 @@
   <h2 class="col-md-3">Concepts</h2>
   <div class="col-md-9">
     <ul class="point">
-      <li class="link"> Assingments Solutions</li>
       <li class="link" 
         (click)="scrollIntoView('course-proj-basics')"> Course Project - The Basics Continued</li>
       <li class="link" 
-        (click)="scrollIntoView('cmp-db-deep-dive')"> Components & Databinding Deep Dive</li>
+        (click)="scrollIntoView('git-rebasing')"> Git Rebasing</li>
       <li class="link" 
-        (click)="scrollIntoView('debugging')"> Debugging</li>
-      <li class="link"
-          (click)="scrollIntoView('course-proj-cmp-db')"> Course Project - Components & Databinding</li>
+        (click)="scrollIntoView('bootstrap')"> Bootstrap</li>
     </ul>
   </div>
 </div>
@@ -31,54 +28,20 @@
 </div>
 <!-- End Course Project - The Basics -->
 
-<!-- Components & Databinding Deep Dive -->
-<div class="row" id="cmp-db-deep-dive">
-  <h2 class="col-md-3">Components & Databinding Deep Dive</h2>
+<!-- Git Rebasing -->
+<div class="row" id="git-rebasing">
+  <h2 class="col-md-3">Git Rebasing</h2>
   <div class="col-md-9">
-    <p class="point">Clone <a href="https://github.com/pratimasakinala/cmp-databinding" target="_blank">this</a> project.</p>
-    <ul class="point">
-      <li>Splitting App into Components</li>
-      <li>Property and event binding -
-        <img src="./assets/property-event-binding.png" alt="property & event binding" class="screenshot">
-      </li>
-      <li>Understanding View Encapsulation</li>
-      <li>Local references in Templates</li>
-      <li>Accessing template & DOM with @ViewChild</li>
-      <li>Using <i>ng-content</i></li>
-      <li>Component Lifecycle -
-        <img src="./assets/component-lifecycle.png" alt="component lifecycle" class="screenshot">
-      </li>
-      <li>Accessing <i>ng-content</i> with @ContentChild</li>
-    </ul>
+    <p class="point">Git rebase in its simplest form is a command which will merge another branch into the branch where you are currently working, and move all of the local commits that are ahead of the rebased branch to the top of the history on that. <br> Read more <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank">here</a>.</p>
   </div>
 </div>
-<!-- End Components & Databinding Deep Dive -->
+<!-- End Git Rebasing -->
 
-<!-- Debugging -->
-<div class="row" id="debugging">
-  <h2 class="col-md-3">Debugging</h2>
+<!-- Bootstrap -->
+<div class="row" id="bootstrap">
+  <h2 class="col-md-3">Bootstrap</h2>
   <div class="col-md-9">
-    <ul class="point">
-      <li>Understanding Angular error message</li>
-      <li>Debugging in browser using sourcemaps</li>
-      <li>Using Augury</li>
-    </ul>
+    <p class="point">Understanding Bootstrap Grid System and more <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">here</a>.</p>
   </div>
 </div>
-<!-- End Debugging -->
-
-<!-- Course Project - Components & Databinding -->
-<div class="row" id="course-proj-cmp-db">
-  <h2 class="col-md-3">Course Project - Components & Databinding</h2>
-  <div class="col-md-9">
-    <div class="point">
-      <p>Fine tune the course project. Here are the tasks we will do: </p>
-      <ul>
-        <li>Navigate between recipe and shopping list.</li>
-        <li>Select recipe and load it into the details section.</li>
-        <li>Add ingredients to the list.</li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- End Course Project - Components & Databinding -->
+<!-- End Bootstrap -->
