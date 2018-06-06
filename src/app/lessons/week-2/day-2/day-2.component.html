@@ -43,8 +43,8 @@
       <ul>
         <li>Create a <i>heading</i> property in AppComponent and set it to "Person Details".</li>
         <li>Create a <i>person</i> property of type any.</li>
-        <li>Set <i>person</i> to be an object consisting of name (empty object) and gender (empty string) properties.</li>
-        <li>The name property in <i>person</i> should have first and last properties (both of type string and set to some default values).</li>
+        <li>Set <i>person</i> to be an object consisting of name (empty object) and gender (empty string) keys.</li>
+        <li>The name key in <i>person</i> should have <i>first</i> and <i>last</i> keys (both of type string and set to some default values).</li>
         <li>In the template, display the heading followed by a paragraph.</li>
         <li>
           Output below message in the paragraph-
@@ -57,7 +57,7 @@
           </code>
         </li>
         <li>In the Name section in the paragraph above, display 'Mr' or 'Mrs' based on the gender of the person. (for example: Mr John Doe)</li>
-        <li>In the City section, check if person property has a <i>address</i> property. If it exists, display its value. Otherwise leave the text blank.</li>
+        <li>In the City section, check if <i>person</i> property has a <i>address</i> key. If it exists, display its value. Otherwise leave the text blank.</li>
       </ul>
     </div>
     <div class="point">
@@ -74,16 +74,16 @@
       <ul>
         <li>Create a class <i>Person</i> (fields: name, gender and rating).</li>
         <li>Set appropriate types to above fields.</li>
-        <li>Create two variable <i>female</i> and <i>male</i>.</li>
-        <li>Set these variables to be instances of Person class (initialize with appropriate values (gender: 'f' for female) and (gender: 'm' for male)).</li>
+        <li>Create two properties <i>female</i> and <i>male</i>.</li>
+        <li>Set these properties to be instances of Person class (initialize with appropriate values (gender: 'f' for female) and (gender: 'm' for male)).</li>
         <li>Create a <i>person</i> property.</li>
-        <li>Create a method that randomly pick between female and male variables and sets it to person property.</li>
+        <li>Create a method that randomly pick between <i>female</i> and <i>male</i> properties and sets it to <i>person</i> property.</li>
         <li>In the template:
           <ul>
-            <li>Use property binding to set an h1 tag's content (textContent) to be "Name: ___ ". Fill in the blank with person's name.</li>
+            <li>Use property binding to set an h1 tag's content (textContent) to be "Name: ___ ". Fill in the blank with <i>person</i>'s name.</li>
             <li>Add two buttons below the h1. One should say "Male" and other "Female".</li>
-            <li>These buttons should be disabled if person's gender is male or female respectively.</li>
-            <li>On clicking the buttons, person should be set to the opposite gender.</li>
+            <li>These buttons should be disabled if <i>person</i>'s gender is male or female respectively.</li>
+            <li>On clicking the buttons, <i>person</i> should be set to the opposite gender.</li>
             <li>(For example, if person is originally set to female, only Male button should be enabled. And on clicking this button, person should be set to male. And hence the button should be disabled.)</li>
           </ul>
         </li>
@@ -99,13 +99,13 @@
           <ul>
             <li>Create a <i>monsterName</i> property of type string in AppComponent.</li>
             <!-- <li>Add an Input field which updates a property <i>monsterName</i> via Two-Way-Binding.</li> -->
-            <li>Output the monsterName property in a paragraph<!-- below the input-->.</li>
+            <li>Output the <i>monsterName</i> property in a paragraph<!-- below the input-->.</li>
           </ul>
         </li>
         <li>
           <p><b>Property Binding:</b></p>
           <ul>
-            <li>Add a button (below the paragraph) which may only be clicked if the monsterName is NOT an empty string.</li>
+            <li>Add a button (below the paragraph) which may only be clicked if the <i>monsterName</i> is NOT an empty string.</li>
             <li>Upon clicking the button, generate a random power value for the monster and store it in a property (appropriately named).</li>
             <li>Display a message (with monsterName and power included) below the button for all monsters created.</li>
             <li>Test functionality by adding/removing value of monsterName property.</li>
