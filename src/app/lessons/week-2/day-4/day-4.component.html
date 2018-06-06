@@ -3,9 +3,15 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
-        (click)="scrollIntoView('assignments')"> Assignments</li>
+          (click)="scrollIntoView('assignments')"> Assignments</li>
+      <li class="link" 
+          (click)="scrollIntoView('asgmt-1')"> Practicing Built-in Directives</li>
+      <li class="link" 
+          (click)="scrollIntoView('asgmt-2')"> Practicing Components & Databinding</li>
       <li class="link"
-        (click)="scrollIntoView('asgmt-1')"> Practicing Databinding</li>
+          (click)="scrollIntoView('asgmt-3')"> Practicing Databinding</li>
+      <li class="link"
+          (click)="scrollIntoView('rebuild-recipe-book')">Rebuild Recipe Book Application</li>
     </ul>
   </div>
 </div>
@@ -29,8 +35,83 @@
 </div>
 <!-- End Assignments -->
 
-<!-- Practicing Databinding -->
+<!-- Practicing Built-in Directives -->
 <div class="row" id="asgmt-1">
+  <h2 class="col-md-3">Practicing Built-in Directives</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p><b>Practice 1:</b></p>
+      <ul>
+        <li>Add a button which says 'Display Details'.</li>
+        <li>Add a paragraph with any content of your choice.</li>
+        <li>Toggle the displaying of that paragraph with the button created in the first step.</li>
+        <li>When the paragraph is displayed, change the button text to 'Hide Details'.</li>
+        <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number).</li>
+        <li>Starting at the 10th log item, give all future log items a green background (via ngClass) and white color (ngStyle).</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2:</b></p>
+      <ul>
+        <li>Continue working on the <i>monster-fight</i> project.</li>
+        <li>Create a new branch.</li>
+        <li>Add a new input that binds to <i>hero</i>'s name property.</li>
+        <li>Add a button which may only be clicked if the hero's name is NOT an empty string.</li>
+        <li>Once this button is clicked, generate random power for hero and remove/hide both the input and button (added in the previous two steps) from the DOM.</li>
+        <li>Looping though the array of monsters, style the display message such that if the monster's power is greater than hero's, add danger styling.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Practicing Built-in Directives -->
+
+<!-- Practicing Components & Databinding -->
+<div class="row" id="asgmt-2">
+  <h2 class="col-md-3">Practicing Components & Directives</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p><b>Practice 1:</b></p>
+      <ul>
+        <li>Continue working on the monster project.</li>
+        <li>Create a new branch.</li>
+        <li>Break down the AppComponent into smaller Components.</li>
+        <li>Pass necessary property/event into and out of these new Components.</li>
+      </ul>
+      <hr>
+      <p><b>Additional challenge:</b></p>
+      <ul>
+        <li>Add a 'Fight' button next to each monster message.</li>
+        <li>Upon clicking this button, do Math calculations to see if the hero survived the fight.</li>
+        <li>If the hero dies, clear the monster list and display 'You Lost!' message and bring back the input for hero and reset the game.</li>
+        <li>If the hero survives and the monster has:
+          <ul>
+            <li>no more power, remove the monster from the list</li>
+            <li>some power left, keep the monster in the list</li>
+          </ul>
+          and let the player continue.
+        </li>
+        <li>Make any style changes you need/want to.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2:</b></p>
+      <ul>
+        <li>Create three new components(manually or with CLI): <i>GameControl</i>, <i>Odd</i> and <i>Even</i>.</li>
+        <li>The GameControl Component should have buttons to start and stop the game.</li>
+        <li>When starting the game, an event (holding a incrementing number) should get emitted each second.</li>
+        <li>The event should be listenable from outside the component.</li>
+        <li>When stopping the game, no more events should get emitted.</li>
+        <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers).</li>
+        <li>Simply output <i>Odd - NUMBER</i> or <i>Even - NUMBER</i> in the two components.</li>
+        <li>Style the element holding your output text differently in both components.</li>
+      </ul>
+  </div>
+  </div>
+</div>
+<!-- End Practicing Components & Databinding -->
+
+<!-- Practicing Databinding -->
+<div class="row" id="asgmt-3">
   <h2 class="col-md-3">Practicing Databinding</h2>
   <div class="col-md-9">
     <div class="point">
@@ -59,3 +140,12 @@
   </div>
 </div>
 <!-- End Practicing Databinding -->
+
+<!-- Rebuild Recipe Book Application -->
+<div class="row" id="rebuild-recipe-book">
+  <h2 class="col-md-3">Rebuild Recipe Book Application</h2>
+  <div class="col-md-9">
+    <p class="point">If you have completed working/learning, rebuild our recipe book application from scratch using instructions starting on Day 4 - Course Project (The Basics). </p>
+  </div>
+</div>
+<!-- End Rebuild Recipe Book Application -->
