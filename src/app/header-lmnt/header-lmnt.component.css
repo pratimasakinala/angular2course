@@ -258,3 +258,11 @@ body.menu-active {
 .header .nav > ul > li.menu-item-has-children > .sub-menu li a:active {
 	color: #FFD202;
 }
+
+.sub-menu {
+	width: 180px;
+}
+
+.padding-0 {
+	padding: 0 !important;
+}
