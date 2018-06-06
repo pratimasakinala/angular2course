@@ -29,6 +29,8 @@ export class LessonsComponent implements OnInit {
         case 3:
           this.day = +params['day'] + 9;
           break;
+        case 4:
+          this.day = +params['day'] + 14;
       }
 
       this.setTitle(`Angular 2+ (Day ${this.day})`);

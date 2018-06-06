@@ -3,5 +3,6 @@
 </div>
 <div [ngSwitch]="week">
   <week-1 *ngSwitchCase="1" (scrolledTo)="scrollIntoView($event)"></week-1>
-  <week-2 *ngSwitchCase="2" (scrolledTo)="scrollIntoView($event)"></week-2>  
+  <week-2 *ngSwitchCase="2" (scrolledTo)="scrollIntoView($event)"></week-2>
+  <week-3 *ngSwitchCase="3" (scrolledTo)="scrollIntoView($event)"></week-3>      
 </div>

@@ -8,6 +8,8 @@
       <li class="link" 
         (click)="scrollIntoView('recap-components')"> Components Recap</li>
       <li class="link" 
+        (click)="scrollIntoView('recap-built-in-directives')"> Built-in Directives Recap</li>
+      <li class="link" 
         (click)="scrollIntoView('cmp-db-deep-dive')"> Components & Databinding Deep Dive</li>
       <li class="link" 
         (click)="scrollIntoView('debugging')"> Debugging</li>
@@ -124,6 +126,73 @@
   </div>
 </div>
 <!-- End Components Recap -->
+
+<!-- Built-in Directives Recap -->
+<div class="row" id="recap-built-in-directives">
+  <h2 class="col-md-3">Built-in Directives Recap</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>What is a directive?</li>
+      <li>Two types of directives?</li>
+      <li>Some of basic built-in directives?</li>
+      <li>
+        <b>Practice:</b>
+        <ul>
+          <!-- ngIf -->
+          <li><b>ngIf-</b></li>
+          <li>Create a property <i>displayParagraph</i> of type boolean and set it to <code>false</code> by default.</li>
+          <li>Display a paragraph with any text of your choice.</li>
+          <li>Add a condition (ngIf) on the above paragraph to check the value of <i>displayParagraph</i>.</li>
+          <li>The paragraph should be displayed if <i>displayParagraph</i> is true.</li>
+          <li>Now set the value of <i>displayParagraph</i> to <code>true</code> and observe the change in template.</li>
+          <!-- end ngIf -->   
+
+          <br>
+          
+          <!-- ngStyle -->          
+          <li><b>ngStyle-</b></li>
+          <li>
+            Use ngStyle to set
+            <br>
+            <ul>
+              <li>
+                <code>position: absolute;<br>right: 0;<br>top: 0;</code>
+              </li>
+            </ul> 
+            properties of the above paragraph.
+          </li>
+          <!-- end ngStyle -->          
+          
+          <br>
+          
+          <!-- ngClass -->          
+          <li><b>ngClass-</b></li>
+          <li>Create a css class <i>color-red</i> that sets the color to red.</li>
+          <li>Create another css class <i>background-yellow</i> that sets the background-color to yellow.</li>
+          <li>Create another css class <i>hide-text</i> that sets the display property to none.</li>
+          <li>Add a new paragraph with any text below the existing paragraph.</li>
+          <li>Add <i>color-red</i> and <i>background-yellow</i> classes using string assignments to ngClass.</li>
+          <li>Create another paragraph with any text and add <i>color-red</i> and <i>background-yellow</i> classes using array assignemnt to ngClass.</li>
+          <li>
+            Create another paragraph with some text and add <i>color-red</i> and <i>background-yellow</i> classes using object assignment to ngClass. To this paragraph, add <i>hide-text</i> class if <i>displayParagraph</i> is true.
+          </li>
+          <!-- end ngClass -->
+
+          <br>
+
+          <!-- ngFor -->
+          <li><b>ngFor-</b></li>
+          <li>Create a property <i>users</i> which is an array of objects.</li>
+          <li>Each user object consists of a name and age property.</li>
+          <li>Create some dummy data in the users array. (create a class maybe? or not.)</li>
+          <li>Display each user's details (name and age used in proper sentence) as a list item in an unordered list under the previously added paragraphs in the template.</li>
+          <!-- end ngFor -->          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- End Built-in Directives Recap -->
 
 <!-- Components & Databinding Deep Dive -->
 <div class="row" id="cmp-db-deep-dive">
