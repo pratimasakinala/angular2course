@@ -4,8 +4,10 @@
     <ul class="point">
       <li class="link"
           (click)="scrollIntoView('assignments')"> Assignments</li>
-      <li class="link" 
-          (click)="scrollIntoView('asgmt-1')"> Practicing Services</li>
+      <li class="link"
+          (click)="scrollIntoView('asgmt-1')"> Practicing Databinding</li>
+      <li class="link"
+          (click)="scrollIntoView('rebuild-recipe-book')">Rebuild Recipe Book Application</li>
     </ul>
   </div>
 </div>
@@ -29,11 +31,66 @@
 </div>
 <!-- End Assignments -->
 
-<!-- Practicing Services -->
+<!-- Practicing Databinding -->
 <div class="row" id="asgmt-1">
-  <h2 class="col-md-3">Practicing Services</h2>
+  <h2 class="col-md-3">Practicing Databinding</h2>
   <div class="col-md-9">
-    <p class="point">Clone <a href="https://github.com/pratimasakinala/services-assignment" target="_blank">this</a> project and follow the instructions mentioned in AppComponent's template.</p>
+    <div class="point">
+      <p><b>Practice 1 (Passing Data to nested component):</b></p>
+      <ul>
+        <li>Create two components: <i>ParentComponent</i> (manually) and <i>ChildComponent</i> (using CLI).</li>
+        <li>In <i>ParentComponent</i>, add a header (h1) with text "I'm a Container Component".</li>
+        <li>Display <i>ChildComponent</i> below this header.</li>
+        <li>In <i>ChildComponent</i>, create a property <i>title</i> and set it to "I'm a nested component".</li>
+        <li>Display a header (h2) with the value of <i>title</i> in <i>ChildComponent</i> template (use inline template).</li>
+        <li>Run the project to make sure the components load with proper data.</li>
+        <li>Modify <i>ChildComponent</i> such that the <i>title</i> property is no longer hard-coded to the string value. But it takes any value passed into it from <i>ParentComponent</i>.</li>
+        <li>Create a <i>childTitle</i> property in <i>ParentComponent</i> and set it to "Text passed to child".</li>
+        <li>Update the <i>ParentComponent</i> template to bind to <i>title</i> property of <i>ChildComponent</i> and pass in <i>childTitle</i> property into it.</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 2 (Passing Data from nested component):</b></p>
+      <ul>
+        <li>Continue working on the same project that was created in Practice 1 above.</li>
+        <li>Add a button in <i>ChildComponent</i> below the header with text "Click me!".</li>
+        <li>On clicking this button, execute a method <i>notifyParent</i> that emits the event to <i>ParentComponent</i>.</li>
+        <li>In <i>ParentComponent</i> template, capture the event emitter and execute a method <i>onNotify</i> (which prints the message in console).</li>
+      </ul>
+    </div>
+    <div class="point">
+      <p><b>Practice 3:</b></p>
+      <ul>
+        <li>Continue working on the monster project.</li>
+        <li>Create a new branch.</li>
+        <li>Break down the AppComponent into smaller Components.</li>
+        <li>Pass necessary property/event into and out of these new Components.</li>
+      </ul>
+      <hr>
+      <p><b>Additional challenge:</b></p>
+      <ul>
+        <li>Add a 'Fight' button next to each monster message.</li>
+        <li>Upon clicking this button, do Math calculations to see if the hero survived the fight.</li>
+        <li>If the hero dies, clear the monster list and display 'You Lost!' message and bring back the input for hero and reset the game.</li>
+        <li>If the hero survives and the monster has:
+          <ul>
+            <li>no more power, remove the monster from the list</li>
+            <li>some power left, keep the monster in the list</li>
+          </ul>
+          and let the player continue.
+        </li>
+        <li>Make any style changes you need/want to.</li>
+      </ul>
+    </div>
   </div>
 </div>
-<!-- End Practicing Services -->
+<!-- End Practicing Databinding -->
+
+<!-- Rebuild Recipe Book Application -->
+<div class="row" id="rebuild-recipe-book">
+  <h2 class="col-md-3">Rebuild Recipe Book Application</h2>
+  <div class="col-md-9">
+    <p class="point">If you have completed working/learning, rebuild our recipe book application from scratch using instructions starting on Day 4 - Course Project (The Basics). </p>
+  </div>
+</div>
+<!-- End Rebuild Recipe Book Application -->

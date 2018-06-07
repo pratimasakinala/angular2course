@@ -260,7 +260,8 @@ body.menu-active {
 }
 
 .sub-menu {
-	width: 180px;
+	width: 180px; 
+	/* change ^ to 300 when week 3 is open */
 }
 
 .padding-0 {

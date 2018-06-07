@@ -8,10 +8,8 @@
           (click)="scrollIntoView('asgmt-1')"> Practicing Built-in Directives</li>
       <li class="link" 
           (click)="scrollIntoView('asgmt-2')"> Practicing Components & Databinding</li>
-      <li class="link"
-          (click)="scrollIntoView('asgmt-3')"> Practicing Databinding</li>
-      <li class="link"
-          (click)="scrollIntoView('rebuild-recipe-book')">Rebuild Recipe Book Application</li>
+      <li class="link" 
+          (click)="scrollIntoView('learn-bootstrap')"> Learn Bootstrap</li>
     </ul>
   </div>
 </div>
@@ -55,7 +53,8 @@
       <ul>
         <li>Continue working on the <i>monster-fight</i> project.</li>
         <li>Create a new branch.</li>
-        <li>Add a new input that binds to <i>hero</i>'s name key.</li>
+        <li>Create a <i>hero</i> property.</li>
+        <li>Add a new input that sets <i>hero</i>'s name key.</li>
         <li>Add a button which may only be clicked if the hero's name is NOT an empty string.</li>
         <li>Once this button is clicked, generate random power for hero and remove/hide both the input and button (added in the previous two steps) from the DOM.</li>
         <li>Looping though the array of monsters, style the display message such that if the monster's power is greater than hero's, add danger styling.</li>
@@ -69,83 +68,25 @@
 <div class="row" id="asgmt-2">
   <h2 class="col-md-3">Practicing Components & Directives</h2>
   <div class="col-md-9">
-    <div class="point">
-      <p><b>Practice 1:</b></p>
-      <ul>
-        <li>Continue working on the monster project.</li>
-        <li>Create a new branch.</li>
-        <li>Break down the AppComponent into smaller Components.</li>
-        <li>Pass necessary property/event into and out of these new Components.</li>
-      </ul>
-      <hr>
-      <p><b>Additional challenge:</b></p>
-      <ul>
-        <li>Add a 'Fight' button next to each monster message.</li>
-        <li>Upon clicking this button, do Math calculations to see if the hero survived the fight.</li>
-        <li>If the hero dies, clear the monster list and display 'You Lost!' message and bring back the input for hero and reset the game.</li>
-        <li>If the hero survives and the monster has:
-          <ul>
-            <li>no more power, remove the monster from the list</li>
-            <li>some power left, keep the monster in the list</li>
-          </ul>
-          and let the player continue.
-        </li>
-        <li>Make any style changes you need/want to.</li>
-      </ul>
-    </div>
-    <div class="point">
-      <p><b>Practice 2:</b></p>
-      <ul>
-        <li>Create three new components(manually or with CLI): <i>GameControl</i>, <i>Odd</i> and <i>Even</i>.</li>
-        <li>The GameControl Component should have buttons to start and stop the game.</li>
-        <li>When starting the game, an event (holding a incrementing number) should get emitted each second.</li>
-        <li>The event should be listenable from outside the component.</li>
-        <li>When stopping the game, no more events should get emitted.</li>
-        <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers).</li>
-        <li>Simply output <i>Odd - NUMBER</i> or <i>Even - NUMBER</i> in the two components.</li>
-        <li>Style the element holding your output text differently in both components.</li>
-      </ul>
-  </div>
+    <ul class="point">
+      <li>Create three new components(manually or with CLI): <i>GameControl</i>, <i>Odd</i> and <i>Even</i>.</li>
+      <li>The GameControl Component should have buttons to start and stop the game.</li>
+      <li>When starting the game, an event (holding a incrementing number) should get emitted each second.</li>
+      <li>The event should be listenable from outside the component.</li>
+      <li>When stopping the game, no more events should get emitted.</li>
+      <li>A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers).</li>
+      <li>Simply output <i>Odd - NUMBER</i> or <i>Even - NUMBER</i> in the two components.</li>
+      <li>Style the element holding your output text differently in both components.</li>
+    </ul>
   </div>
 </div>
 <!-- End Practicing Components & Databinding -->
 
-<!-- Practicing Databinding -->
-<div class="row" id="asgmt-3">
-  <h2 class="col-md-3">Practicing Databinding</h2>
+<!-- Learn Bootstrap -->
+<div class="row" id="learn-bootstrap">
+  <h2 class="col-md-3">Learn Bootstrap</h2>
   <div class="col-md-9">
-    <div class="point">
-      <p><b>Practice 1 (Passing Data to nested component):</b></p>
-      <ul>
-        <li>Create two components: <i>ParentComponent</i> (manually) and <i>ChildComponent</i> (using CLI).</li>
-        <li>In <i>ParentComponent</i>, add a header (h1) with text "I'm a Container Component".</li>
-        <li>Display <i>ChildComponent</i> below this header.</li>
-        <li>In <i>ChildComponent</i>, create a property <i>title</i> and set it to "I'm a nested component".</li>
-        <li>Display a header (h2) with the value of <i>title</i> in <i>ChildComponent</i> template (use inline template).</li>
-        <li>Run the project to make sure the components load with proper data.</li>
-        <li>Modify <i>ChildComponent</i> such that the <i>title</i> property is no longer hard-coded to the string value. But it takes any value passed into it from <i>ParentComponent</i>.</li>
-        <li>Create a <i>childTitle</i> property in <i>ParentComponent</i> and set it to "Text passed to child".</li>
-        <li>Update the <i>ParentComponent</i> template to bind to <i>title</i> property of <i>ChildComponent</i> and pass in <i>childTitle</i> property into it.</li>
-      </ul>
-    </div>
-    <div class="point">
-      <p><b>Practice 2 (Passing Data from nested component):</b></p>
-      <ul>
-        <li>Continue working on the same project that was created in Practice 1 above.</li>
-        <li>Add a button in <i>ChildComponent</i> below the header with text "Click me!".</li>
-        <li>On clicking this button, execute a method <i>notifyParent</i> that emits the event to <i>ParentComponent</i>.</li>
-        <li>In <i>ParentComponent</i> template, capture the event emitter and execute a method <i>onNotify</i> (which prints the message in console).</li>
-      </ul>
-    </div>
+    <p class="point">Go through practice and other material listed on Handy Links section for Bootstrap.</p>
   </div>
 </div>
-<!-- End Practicing Databinding -->
-
-<!-- Rebuild Recipe Book Application -->
-<div class="row" id="rebuild-recipe-book">
-  <h2 class="col-md-3">Rebuild Recipe Book Application</h2>
-  <div class="col-md-9">
-    <p class="point">If you have completed working/learning, rebuild our recipe book application from scratch using instructions starting on Day 4 - Course Project (The Basics). </p>
-  </div>
-</div>
-<!-- End Rebuild Recipe Book Application -->
+<!-- End Learn Bootstrap -->
