@@ -260,7 +260,7 @@ body.menu-active {
 }
 
 .sub-menu {
-	width: 300px;
+	width:  300px; /*400px;*/
 }
 
 .padding-0 {
