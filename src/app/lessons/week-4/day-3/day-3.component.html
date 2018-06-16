@@ -3,14 +3,23 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
+          (click)="scrollIntoView('course-project-dir')"> Course Project - Directives</li> 
+      <li class="link"
           (click)="scrollIntoView('services')"> Services & Dependency Injection</li>
       <li class="link"
           (click)="scrollIntoView('course-proj-srv-dependency')"> Course Project - Services & Dependency Injection</li>
-      <li class="link"
-          (click)="scrollIntoView('routing')"> Routing</li> 
     </ul>
   </div>
 </div>
+
+<!-- Course Project - Directives -->
+<div class="row" id="course-project-dir">
+  <h2 class="col-md-3">Course Project - Directives</h2>
+  <div class="col-md-9">
+    <p class="point">Enhance the app to open the dropdowns which currently don't work.</p>
+  </div>
+</div>
+<!-- End Course Project - Directives -->
 
 <!-- Services & Dependency Injection -->
 <div class="row" id="services">
@@ -54,23 +63,3 @@
   </div>
 </div>
 <!-- End Course Project - Services & Dependency Injection -->
-
-<!-- Routing -->
-<div class="row" id="routing">
-  <h2 class="col-md-3">Routing</h2>
-  <div class="col-md-9">
-    <p class="point">Angular ships with its own router which allows us to change the URL and still only use one page but then exchange major parts of that page.</p>
-    <ul class="point">
-      <li>Why do we need a Router?</li>
-      <li>Understanding the <a href="https://github.com/pratimasakinala/angular-routing" target="_blank">example</a> project.</li>
-      <li>Setting up and Loading Routes.</li>
-      <li>Navigating with Router Links.</li>
-      <li>Understanding Navigation Paths.</li>
-      <li>Styling active Router Links.</li>
-      <li>Navigating Programmatically.</li>
-      <li>Using Relative Paths in Programmatic Navigation.</li>
-      <li>Passing parameters to routes.</li>
-    </ul>
-  </div>
-</div>
-<!-- End Routing -->
