@@ -3,10 +3,33 @@
   <div class="col-md-9">
     <ul class="point">
       <li class="link"
+          (click)="scrollIntoView('course-proj-srv-dependency')"> Course Project - Services & Dependency Injection</li>
+      <li class="link"
           (click)="scrollIntoView('routing')"> Routing</li> 
     </ul>
   </div>
 </div>
+
+<!-- Course Project - Services & Dependency Injection -->
+<div class="row" id="course-proj-srv-dependency">
+  <h2 class="col-md-3">Course Project - Services & Dependency Injection</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p>Lets add services to our recipe-book application.</p>
+      <img src="./assets/services-for-app.png" alt="services for app" class="screenshot">
+      <ul>
+        <li>Setting up the services.</li>
+        <li>Managing recipes in a recipe service.</li>
+        <li>Using a service for cross-component communication.</li>
+        <li>Adding shopping list service.</li>
+        <li>Using services for "Push Notifications".</li>
+        <li>Adding ingredients to recipes.</li>
+        <li>Passing ingredients from recipes to the shopping-list.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Course Project - Services & Dependency Injection -->
 
 <!-- Routing -->
 <div class="row" id="routing">
@@ -22,7 +45,11 @@
       <li>Styling active Router Links.</li>
       <li>Navigating Programmatically.</li>
       <li>Using Relative Paths in Programmatic Navigation.</li>
-      <li>Passing parameters to routes.</li>
+      <li>Passing Parameters to Routes.</li>
+      <li>Fetching Route Parameters.</li>
+      <li>Fetching Route Parameters reactively.</li>
+      <li>Important note about Route Observables.</li>
+      <li>Passing Query Params and Fragments.</li>
     </ul>
   </div>
 </div>
