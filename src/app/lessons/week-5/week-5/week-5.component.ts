@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-week-5',
+  selector: 'week-5',
   templateUrl: './week-5.component.html',
   styleUrls: ['./week-5.component.css']
 })
