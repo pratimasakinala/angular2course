@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-day-5',
+  selector: 'day-5',
   templateUrl: './day-5.component.html',
   styleUrls: ['./day-5.component.css']
 })

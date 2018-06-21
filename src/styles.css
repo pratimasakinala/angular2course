@@ -98,6 +98,7 @@ body.theme .content .row .week-header {
   color: #0073ea;
   display: block;
   margin-top: 5px;
+  overflow-wrap: break-word;
 }
 .links .link-list ul li a:hover {
   color: #7A1501;

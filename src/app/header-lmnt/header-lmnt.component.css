@@ -260,9 +260,40 @@ body.menu-active {
 }
 
 .sub-menu {
-	width: 400px;
+	width: 325px; /*400px;*/
 }
 
 .padding-0 {
 	padding: 0 !important;
+}
+
+.sub-menu .row {
+	width: 100%;
+}
+
+@media(max-width: 890px) {
+	.sub-menu {
+		width: 250px;
+	}
+
+	.sub-menu .row .border-bottom {
+		border-bottom: 1px solid white;
+	}
+}
+
+@media(max-width: 560px) {
+	.sub-menu {
+		width: 200px;
+		height: 500px !important;
+	}
+
+	.sub-menu .row .bottom-border {
+		border-bottom: 1px solid white;
+	}
+}
+
+@media(max-width: 455px) {
+	.sub-menu {
+		width: auto;
+	}
 }
