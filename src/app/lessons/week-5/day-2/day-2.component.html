@@ -6,6 +6,12 @@
           (click)="scrollIntoView('assignments')"> Assignments</li>
       <li class="link" 
           (click)="scrollIntoView('asgmt-1')"> Practicing Services</li>
+      <li class="link" 
+          (click)="scrollIntoView('setup-routing')"> Setup for Routing</li>
+      <li class="link" 
+          (click)="scrollIntoView('merge-recipe-book')"> Merge Recipe-book branches</li>
+      <li class="link" 
+          (click)="scrollIntoView('asgmt-2')"> <b>Additional Challenge:</b> Practice Routing</li>
     </ul>
   </div>
 </div>
@@ -33,7 +39,65 @@
 <div class="row" id="asgmt-1">
   <h2 class="col-md-3">Practicing Services</h2>
   <div class="col-md-9">
-    <p class="point">Clone <a href="https://github.com/pratimasakinala/services-assignment" target="_blank">this</a> project and follow the instructions mentioned in AppComponent's template.</p>
+    <ul class="point">
+      <li>Clone <a href="https://github.com/pratimasakinala/services-assignment" target="_blank">this</a> project.</li>
+      <li>Create a project new repository in your Github account.</li>
+      <li>Change remote to your repository instead of mine.</li>
+      <li>Push to new repository.</li>
+      <li>Create a new branch and follow the instructions mentioned in AppComponent's template.</li>
+    </ul>
   </div>
 </div>
 <!-- End Practicing Services -->
+
+<!-- Setup for Routing -->
+<div class="row" id="setup-routing">
+  <h2 class="col-md-3">Setup for Routing</h2>
+  <div class="col-md-9">
+    <div class="point">
+      <p>For those who were not in class on Day 20:</p>
+      <ul>
+        <li>Clone <a href="https://github.com/pratimasakinala/angular-routing" target="_blank">this</a> project.</li>
+        <li>Create a new branch called <i>understanding-nav-paths</i>.</li>
+        <li>Pull <i>pratima</i> branch from Github into <i>understanding-nav-paths</i> branch locally.</li>
+        <li>Create a new repository in your Github account and set that to be the new remote for the cloned project.</li>
+        <li>Push <i>master</i> to new repository.</li>
+        <li>Checkout to <i>understanding-nav-paths</i> (no need to push yet).</li>
+      </ul>
+    </div>
+    <br>
+    <div class="point">
+      <p>Those who were in class on Day 20:</p>
+      <ul>
+        <li>Create a new branch called <i>understanding-nav-paths</i>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Setup for Routing -->
+
+<!-- Merge Recipe-book branches -->
+<div class="row" id="merge-recipe-book">
+  <h2 class="col-md-3">Merge Recipe-book branches</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Working with a partner, merge all branches in recipe-book into master in proper order.</li>
+      <li>Remember to rebase and push to already pushed branches with force flag.</li>
+      <li>Take a look at the order of topics covered to determine the order of branches to be merged.</li>
+    </ul>
+  </div>
+</div>
+<!-- End Merge Recipe-book branches -->
+
+<!-- Additional Challenge: Practice Routing -->
+<div class="row" id="asgmt-2">
+  <h2 class="col-md-3">Additional Challenge: Practice Routing</h2>
+  <div class="col-md-9">
+    <ul class="point">
+      <li>Working on recipe-book application, create a <i>practice-routing</i> branch (branch off of services branch).</li>
+      <li>Create basic route path configurations for the application.</li>
+      <li>Use this route configuration for navigating between recipe and shopping-list features.</li>
+    </ul>
+  </div>
+</div>
+<!-- End Additional Challenge: Practice Routing -->
