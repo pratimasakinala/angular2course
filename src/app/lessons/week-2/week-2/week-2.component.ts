@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,8 +7,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./week-2.component.css']
 })
 export class Week2Component implements OnInit {
-  @Input() day: number;
   @Output() scrolledTo = new EventEmitter();
+  day: number;
 
   constructor(private route: ActivatedRoute) { }
 

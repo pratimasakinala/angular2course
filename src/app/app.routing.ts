@@ -6,6 +6,10 @@ const appRoutes: Routes = [
         path: '',
         pathMatch: 'full',
         redirectTo: '/lessons/1/1'
+    }, 
+    {
+        path: '**',
+        redirectTo: '/lessons/1/1'
     }
 ];
 
